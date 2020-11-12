@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tinos:wght@700&display=swap');
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: monospace, arial, sans-serif;
+  color: white;
+}
+
+header {
+  background-color:#191310;
+  color: black;
+  padding: 3%;
+  text-align: center;
+}
+
+header h1 {
+  font-family: tinos;
+  font-size: 8em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 2px 2px white;
+}
+
+header h2 {
+  font-size: 1.6em;
+  color: white;
+  font-family: Orbitron, georgia, times, serif;
+  text-decoration: underline;
+}
+
+
+nav {
+  background-color:black;
+  text-align: center;
+}
+
+nav a:link {
+  background-color: black;
+  color: #555;
+  padding: 1% 2%;
+  display:inline-block;
+  text-decoration: overline;
+}
+
+nav a:visited {
+  color: #555;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #191310;
+}
+
+nav a.active {
+  color: white;
+  background-color: #191310;
+}
+
+a:link {
+  background-color: black;
+  color: #555;
+  padding: 1% 2%;
+  display:inline-block;
+  text-decoration: overline;
+}
+
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  color: white;
+  background-color: #191310;
+}
+
+a.active {
+  color: white;
+  background-color: #191310;
+}
+
+article.essay {
+  padding: 2%;
+  text-align: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+article.essay p {
+  padding: 2%;
+  text-align: left;
+}
+
+article.mockup {
+  padding: 2%;
+  text-align: center;
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+article.wireframe {
+  text-align: center;
+  line-height: 5vh;
+  padding: 2%;
+}
+
+article.moodboard {
+  text-align: center;
+  line-height: 5vh;
+  padding: 2%;
+}
+
+article.moodboard img {
+  width: 80em;
+}
+
+article.wireframe img {
+  width: 50em;
+}
+
+article h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  margin-bottom: 0.5%;
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article p {
+  margin-bottom: 5%;
+  font-size: 18px;
+  line-height: 24px;
+}
