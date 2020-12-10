@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tinos:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: black;
+  background-size: cover;
+  font-family: Garamond;
+  color: white;
+}
+
+header {
+  background: Inherits;
+  color: white;
+  padding: 0%;
+  text-align: center;
+}
+
+header h1 {
+  /* margin-top: 0.3em; */
+  background: Inherits;
+  text-shadow:0 0 20px rgba(0,0,0, 1);
+  padding: 3%;
+  font-family: Garamond;
+  font-size: 18vmin;
+  transition: .5s;
+}
+
+header h1:hover {
+  /* margin-top: 0.3em; */
+  background: Inherits;
+  text-shadow:0 0 20px rgba(255,255,255, 1);
+  transition: .5s;
+  padding: 3%;
+  font-family: Garamond;
+  font-size: 18vmin;
+}
+
+section.background1 {
+  padding-bottom:2vh;
+  background: url("../images/backgroundhorse.jpg") no-repeat fixed left center;
+  background-size: cover;
+}
+
+section.background2 {
+  padding-top:2vh;
+  padding-bottom:2vh;
+  background: url("../images/horse1.jpg") no-repeat fixed left center;
+  background-size: cover;
+}
+
+section.background3 {
+  height: 100vh;
+  padding-top:2vh;
+  padding-bottom:2vh;
+  background: url("../images/horse2.jpg") no-repeat fixed left center;
+  background-size: cover;
+}
+
+article.text1 {
+  overflow-y: visible;
+  transition: all .5s;
+  opacity: 0;
+}
+
+article.text1:hover {
+  opacity: 1;
+}
+
+article.text2 {
+  overflow-y: visible;
+  transition: all .5s;
+  opacity: 0;
+}
+
+article.text2:hover {
+  opacity: 1;
+}
+
+article.text3 {
+  overflow-y: visible;
+  transition: all .5s;
+  opacity: 0;
+}
+
+article.text3:hover {
+  opacity: 1;
+}
+
+p {
+  text-align: justify;
+  font-size: 2vmin;
+  padding: 10px;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.5);
+  line-height: 200%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a.active {
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+	.parent a:link {
+		flex:1 50%;
+	}
+
+}
+
+@media only screen and (min-width: 980px) {
+	.parent a:link {
+		flex:1 auto;
+	}
+
+}

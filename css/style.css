@@ -1,142 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Tinos:wght@700&display=swap');
-*  {
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-  background-color: black;
-  font-family: monospace, arial, sans-serif;
+  background: url("../images/backgroundforest.jpg") no-repeat fixed left center;
+  background-size: cover;
+  font-family: Garamond;
   color: white;
 }
 
 header {
-  background-color:#191310;
-  color: black;
-  padding: 3%;
+  background: Inherits;
+  color: white;
+  padding: 0%;
   text-align: center;
 }
 
 header h1 {
-  font-family: tinos;
-  font-size: 8em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-shadow: 2px 2px white;
+  /* margin-top: 0.3em; */
+  background: Inherits;
+  text-shadow:0 0 20px rgba(0,0,0, 1);
+  padding: 3%;
+  font-family: Garamond;
+  font-size: 18vmin;
+  transition: .5s;
 }
 
-header h2 {
-  font-size: 1.6em;
+header h1:hover {
+  /* margin-top: 0.3em; */
+  background: Inherits;
+  text-shadow:0 0 20px rgba(255,255,255, 1);
+  padding: 3%;
+  font-family: Garamond;
+  font-size: 18vmin;
+  transition: .5s;
+}
+
+section.parent {
+	width:100%;
+	min-height:100vh;
+	height: auto;
+	display: flex;
+  flex-flow: row wrap;
+}
+
+.parent a:link {  /* code from week 5 example */
+	flex:1 100%;
+	border:solid rgba(255,255,255, 0.5) 10px;
+	font-family: Garamond;
+	font-size: 4vmax;
+	color:#fff;
+	text-shadow:0 0 20px rgba(0,0,0, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  transition: .5s;
+}
+
+.parent a:hover {
+	flex:1 100%;
+	border:solid rgba(255,255,255, 0.5) 10px;
+	font-family: Garamond;
+	font-size: 4vmax;
+	color:#fff;
+	text-shadow:0 0 20px rgba(255,255,255, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  transition: .5s;
+}
+
+#one { /* code from week 5 example */
+	background:url("../images/backgroundhorse.jpg") no-repeat center bottom;
+	background-size: cover;
+}
+
+#two {
+	background:url("../images/backgroundram.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#three {
+	background:url("../images/backgroundcrocodile.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+#four {
+	background:url("../images/backgroundant.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+a {
   color: white;
-  font-family: Orbitron, georgia, times, serif;
-  text-decoration: underline;
-}
-
-
-nav {
-  background-color:black;
-  text-align: center;
-}
-
-nav a:link {
-  background-color: black;
-  color: #555;
-  padding: 1% 2%;
-  display:inline-block;
-  text-decoration: overline;
-}
-
-nav a:visited {
-  color: #555;
-}
-
-nav a:hover {
-  color: white;
-  background-color: #191310;
-}
-
-nav a.active {
-  color: white;
-  background-color: #191310;
-}
-
-a:link {
-  background-color: black;
-  color: #555;
-  padding: 1% 2%;
-  display:inline-block;
-  text-decoration: overline;
 }
 
 a:visited {
-  color: #555;
-}
-
-a:hover {
   color: white;
-  background-color: #191310;
 }
 
 a.active {
   color: white;
-  background-color: #191310;
 }
 
-article.essay {
-  padding: 2%;
-  text-align: center;
-  margin-left: 32%;
-  margin-right: 32%;
+a:link {
+  color: white;
 }
 
-article.essay p {
-  padding: 2%;
-  text-align: left;
+@media only screen and (min-width: 600px) { /* code from week 5 example */
+	.parent a:link {
+		flex:1 50%;
+	}
 }
 
-article.mockup {
-  padding: 2%;
-  text-align: center;
-  margin-left: 32%;
-  margin-right: 32%;
-}
-
-article.wireframe {
-  text-align: center;
-  line-height: 5vh;
-  padding: 2%;
-}
-
-article.moodboard {
-  text-align: center;
-  line-height: 5vh;
-  padding: 2%;
-}
-
-article.moodboard img {
-  width: 80em;
-}
-
-article.wireframe img {
-  width: 50em;
-}
-
-article h1 {
-  font-size: 38px;
-  text-transform: capitalize;
-  margin-bottom: 0.5%;
-}
-
-article h2 {
-  font-size: 28px;
-  text-transform: capitalize;
-  margin-bottom: .5%;
-}
-
-article p {
-  margin-bottom: 5%;
-  font-size: 18px;
-  line-height: 24px;
+@media only screen and (min-width: 980px) {
+	.parent a:link {
+		flex:1 auto;
+	}
 }
